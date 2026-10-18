@@ -1,1 +1,336 @@
 # india-history
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Средневековье Индии</title>
+
+    <style>
+        /* Основные настройки */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #090b20, #171044, #101d42);
+            color: white;
+            min-height: 100vh;
+            padding: 30px;
+        }
+
+        /* Верхняя часть сайта */
+        header {
+            text-align: center;
+            padding: 30px 20px;
+            margin-bottom: 40px;
+
+            background: linear-gradient(145deg, #24283b, #111426);
+            border: 2px solid #5364a3;
+            border-radius: 15px;
+
+            box-shadow: 0 0 20px #4835a8;
+        }
+
+        header h1 {
+            font-size: 38px;
+            color: #b8a7ff;
+            text-shadow: 0 0 12px #7655ff;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            color: #b8c8ff;
+            font-size: 17px;
+        }
+
+        /* Разделы истории */
+        .history-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+
+            margin-bottom: 35px;
+            padding: 25px;
+
+            background: linear-gradient(135deg, #171b35, #252044);
+            border: 1px solid #5364a3;
+            border-radius: 15px;
+
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Текст находится слева */
+        .history-text {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .history-text h2 {
+            color: #91aaff;
+            font-size: 27px;
+            margin-bottom: 18px;
+        }
+
+        .history-text p {
+            color: #e0e4ff;
+            font-size: 17px;
+            line-height: 1.9;
+            margin-bottom: 15px;
+        }
+
+        /* Фотографии находятся справа */
+        .history-images {
+            width: 38%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            flex-shrink: 0;
+        }
+
+        .history-images img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+
+            background: #171a30;
+            border: 2px solid #7b82d9;
+            border-radius: 12px;
+
+            box-shadow: 0 0 12px rgba(99, 102, 241, 0.3);
+        }
+
+        /* Металлическая кнопка */
+        .metal-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 13px 24px;
+
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+
+            background: linear-gradient(
+                145deg,
+                #707b9b,
+                #303954,
+                #6975a0
+            );
+
+            border: 1px solid #aab8e9;
+            border-radius: 8px;
+
+            box-shadow: 0 4px 12px #090b20;
+            transition: 0.3s;
+        }
+
+        .metal-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 18px #7865ff;
+            background: linear-gradient(
+                145deg,
+                #8170d5,
+                #39336f,
+                #7773d9
+            );
+        }
+
+        /* Нижняя часть сайта */
+        footer {
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+
+            color: #aab8e9;
+            border-top: 1px solid #5364a3;
+        }
+
+        /* Настройки для телефонов */
+        @media (max-width: 700px) {
+            body {
+                padding: 12px;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            .history-section {
+                flex-direction: column;
+                padding: 18px;
+            }
+
+            .history-images {
+                width: 100%;
+            }
+
+            .history-images img {
+                height: 200px;
+            }
+        }
+    </style>
+  <!-- Заголовок сайта -->
+    <header>
+        <h1>Средневековье Индии</h1>
+        <p>Исторический проект (от Шаргазива Умара)</p>
+    </header>
+
+    <main>
+
+        <!-- Первый раздел -->
+        <section class="history-section">
+
+            <div class="history-text">
+                <h2>1. Индия в Средние века</h2>
+
+                <p>
+                    Средневековая история Индии охватывает несколько столетий,
+                    в течение которых на территории страны существовали разные
+                    государства и империи. Индия была важным центром торговли,
+                    культуры, науки и религии.
+                </p>
+
+                <p>
+                    В разных регионах правили могущественные династии.
+                    Они строили города, дворцы, храмы и крепости.
+                    Между государствами происходили войны, заключались союзы,
+                    а торговцы связывали Индию с другими странами Азии.
+                </p>
+            </div>
+
+            <div class="history-images">
+
+                <!-- Замени image1.jpg на название своей фотографии -->
+                <img src="image1.jpg" alt="Средневековая Индия">
+
+                <!-- Здесь можно добавить ещё одну фотографию -->
+                <img src="image2.jpg" alt="Историческая архитектура Индии">
+
+            </div>
+
+        </section>
+
+
+        <!-- Второй раздел -->
+        <section class="history-section">
+
+            <div class="history-text">
+                <h2>2. Делийский султанат</h2>
+
+                <p>
+                    Делийский султанат возник в Северной Индии в начале
+                    XIII века. Его столицей был Дели. На протяжении
+                    нескольких столетий султанатом управляли разные династии.
+                </p>
+
+                <p>
+                    Дели стал важным политическим и культурным центром.
+                    Развивались ремёсла, торговля и архитектура.
+                    При этом между правителями происходили военные конфликты,
+                    а власть султанов со временем менялась.
+                </p>
+
+                <a href="#mogoly" class="metal-button">
+                    Следующий раздел
+                </a>
+            </div>
+
+            <div class="history-images">
+
+                <!-- Добавь сюда свои фотографии -->
+                <img src="image3.jpg" alt="Делийский султанат">
+
+                <img src="image4.jpg" alt="Исторические здания Дели">
+
+            </div>
+
+        </section>
+
+
+        <!-- Третий раздел -->
+        <section class="history-section" id="mogoly">
+
+            <div class="history-text">
+                <h2>3. Империя Великих Моголов</h2>
+
+                <p>
+                    Империя Великих Моголов была основана Бабуром в 1526 году.
+                    Со временем она стала одним из крупнейших государств
+                    на Индийском субконтиненте.
+                </p>
+
+                <p>
+                    Особенно известен правитель Акбар, который укрепил
+                    государство и проводил политику расширения империи.
+                    При Моголах развивались искусство, литература,
+                    живопись и архитектура.
+                </p>
+
+                <p>
+                    Одним из самых известных памятников этой эпохи стал
+                    Тадж-Махал, построенный в XVII веке по приказу
+                    императора Шах-Джахана.
+                </p>
+            </div>
+
+            <div class="history-images">
+
+                <!-- Добавь фотографии империи Великих Моголов -->
+                <img src="image5.jpg" alt="Империя Великих Моголов">
+
+                <img src="image6.jpg" alt="Тадж-Махал">
+
+            </div>
+
+        </section>
+
+
+        <!-- Четвёртый раздел -->
+        <section class="history-section">
+
+            <div class="history-text">
+                <h2>4. Культура и достижения Индии</h2>
+              <p>
+                    Средневековая Индия была известна своими достижениями
+                    в математике, медицине, литературе и архитектуре.
+                    В разных регионах развивались собственные языки,
+                    художественные традиции и религиозные направления.
+                </p>
+
+                <p>
+                    Индийские мастера создавали украшения, ткани,
+                    скульптуры и великолепные архитектурные сооружения.
+                    Торговля помогала распространять товары и культурные
+                    идеи между Индией и другими регионами мира.
+                </p>
+            </div>
+
+            <div class="history-images">
+
+                <!-- Добавь фотографии индийского искусства -->
+                <img src="image7.jpg" alt="Индийское искусство">
+
+                <img src="image8.jpg" alt="Архитектура средневековой Индии">
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Нижняя часть сайта -->
+    <footer>
+        <p>Исторический проект — Средневековье Индии</p>
+        <p>Автор: Шаргазив Умар</p>
+    </footer>
+
+</body>
+</html>
+</head>
+
+<body>
