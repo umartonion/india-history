@@ -1,0 +1,164 @@
+  /* Основные настройки */
+        * {
+            margin: 0; 
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #090b20, #171044, #101d42);
+            color: white;
+            min-height: 100vh;
+            padding: 30px;
+        }
+
+        /* Верхняя часть сайта */
+        header {
+            text-align: center;
+            padding: 30px 20px;
+            margin-bottom: 40px;
+
+            background: linear-gradient(145deg, #24283b, #111426);
+            border: 2px solid #5364a3;
+            border-radius: 15px;
+
+            box-shadow: 0 0 20px #4835a8;
+        }
+
+        header h1 {
+            font-size: 38px;
+            color: #b8a7ff;
+            text-shadow: 0 0 12px #7655ff;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            color: #b8c8ff;
+            font-size: 17px;
+        }
+
+        /* Разделы истории */
+        .history-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+
+            margin-bottom: 35px;
+            padding: 25px;
+
+            background: linear-gradient(135deg, #171b35, #252044);
+            border: 1px solid #5364a3;
+            border-radius: 15px;
+
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Текст находится слева */
+        .history-text {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .history-text h2 {
+            color: #91aaff;
+            font-size: 27px;
+            margin-bottom: 18px;
+        }
+
+        .history-text p {
+            color: #e0e4ff;
+            font-size: 17px;
+            line-height: 1.9;
+            margin-bottom: 15px;
+        }
+
+        /* Фотографии находятся справа */
+        .history-images {
+            width: 38%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            flex-shrink: 0;
+        }
+
+        .history-images img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+
+            background: #171a30;
+            border: 2px solid #7b82d9;
+            border-radius: 12px;
+
+            box-shadow: 0 0 12px rgba(99, 102, 241, 0.3);
+        }
+
+        /* Металлическая кнопка */
+        .metal-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 13px 24px;
+
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+
+            background: linear-gradient(
+                145deg,
+                #707b9b,
+                #303954,
+                #6975a0
+            );
+
+            border: 1px solid #aab8e9;
+            border-radius: 8px;
+
+            box-shadow: 0 4px 12px #090b20;
+            transition: 0.3s;
+        }
+
+        .metal-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 18px #7865ff;
+            background: linear-gradient(
+                145deg,
+                #8170d5,
+                #39336f,
+                #7773d9
+            );
+        }
+
+        /* Нижняя часть сайта */
+        footer {
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+
+            color: #aab8e9;
+            border-top: 1px solid #5364a3;
+        }
+
+        /* Настройки для телефонов */
+        @media (max-width: 700px) {
+            body {
+                padding: 12px;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            .history-section {
+                flex-direction: column;
+                padding: 18px;
+            }
+
+            .history-images {
+                width: 100%;
+            }
+
+            .history-images img {
+                height: 200px;
+            }
+        }
